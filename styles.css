@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+    background-color: var(--Dark-cyan);
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.circle-1 {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+}
+.circle-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -3;
+}
+
+.card {
+    height: 460px;
+    width: 400px;
+   background-color: white;
+    margin: 400px auto;
+ border-radius: 20px;
+ color: var(--Dark-grayish-blue);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.card .profile-pic  {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 5px solid white;
+    position: relative;
+    bottom: 50px;
+    left: 140px;
+   
+}
+
+.card h2 {
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+    color: var(--Very-dark-desaturated-blue);
+}
+.card p {
+    text-align: center;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stats p:first-child {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--Very-dark-desaturated-blue);
+} 
+.stats p:nth-child(2) {
+   font-size: 0.9rem;
+   letter-spacing: 1px;
+   margin-top: 5px;
+} 
+
+hr {
+    margin: 20px 0;
+    background-color: var(--Dark-gray);
+    height: 1px ;
+    border: none;
+}
+
+.attribution {
+    text-align: center;
+}
+
+span {
+   color: var(--Dark-gray);
+}
